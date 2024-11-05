@@ -8,7 +8,7 @@ app.url_map.strict_slashes = False
 
 
 @app.route("/")
-def hello_world()-> str:
+def hello_world() -> str:
     """ default route"""
     return render_template("0-index.html")
 
