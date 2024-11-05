@@ -19,7 +19,7 @@ babel = Babel(app)
 
 
 @app.route("/")
-def hello_world():
+def hello_world() -> str:
     """ default route"""
     return render_template("1-index.html")
 
