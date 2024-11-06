@@ -56,7 +56,7 @@ def get_user() -> Union[dict, None]:
 
 
 @app.before_request
-def before_request():
+def before_request() -> None:
     '''to find a user if any'''
     g.user = get_user()
 
